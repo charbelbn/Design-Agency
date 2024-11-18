@@ -1,0 +1,125 @@
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 50px 50px 0 50px;
+  background-color: #faf9f6;
+  display: flex;
+  flex-direction: column;
+  min-height: 95vh;
+}
+.main {
+  flex: 1;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+footer {
+  text-align: right;
+  color: midnightblue;
+}
+
+.tile-image {
+  height: 200px;
+  float: left;
+  margin-right: 50px;
+}
+
+.card {
+  width: 45%;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.creative {
+  color: midnightblue;
+}
+
+@media (max-width: 680px) {
+  .logo {
+    width: 100px;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+    text-align: center;
+  }
+
+  .card {
+    width: 100%;
+    display: block;
+    margin-bottom: 30px;
+    text-align: justify;
+  }
+
+  .card img {
+    margin-bottom: 10px;
+    width: 100%;
+    display: inline;
+    object-fit: cover;
+  }
+}
+
+
+/*
+
+1-
+
+The flex: 1; shorthand sets three properties:
+
+flex-grow: 1;: This allows the .main element to grow and take up any available space in the flex container.
+If there’s extra space in the container after laying out other elements (like the footer), .main will expand
+to fill that space.
+
+flex-shrink: 1;: This allows the .main element to shrink if the container size reduces. This is important for
+responsiveness, as it ensures the layout adapts to different screen sizes.
+
+flex-basis: 0;: This sets the initial size of the .main element to zero before applying the flex-grow property,
+allowing it to take up space only based on available room in the container.
+
+EZA MA HATAYTA LI BI SIR HOUE ENNO LFOOTER MA BET KOUN BEL LEKHER BET KOUN DEGHRE AWAL MA TEKHLASS LDIV BAS EZA
+KENET HATIT   FLEX:1   LI BI SIR ENNO L FOOTER RAH TSIR BI KA3EB LPAGE...
+
+
+
+2-
+
+margin: 50px 50px 0 50px;
+This defines the margins around the body of the webpage. It’s shorthand for
+margin-top, margin-right, margin-bottom, and margin-left, respectively.
+
+
+
+3-
+
+Display: flex;
+The display: flex property sets the layout of the body to use Flexbox.
+Flexbox is a layout model that helps with aligning items along a single axis (horizontal or vertical).
+
+flex-direction: column;  is used with Flexbox. It tells the Flexbox layout to arrange child elements 
+(like the .main and footer divs) in a vertical column from top to bottom.
+
+
+
+4-
+
+min-height: 95vh;
+This ensures the body takes up at least 95% of the viewport height (vh stands for "viewport height").
+
+
+
+5-
+
+text-align: justify;
+The CSS property is used to align text so that it is evenly distributed along both the left and right edges 
+of its containing element. This means that the text adjusts the spacing between words so that each line 
+of text fills the full width of the container (except for the last line in a paragraph, 
+which remains left-aligned by default).
+
+*/
